@@ -1,5 +1,5 @@
 import React from "react";
-import "style.css";
+import "./style.css";
 
 const Repo = ({ repoName, issues, forks, stars, commits }) => {
   return (
