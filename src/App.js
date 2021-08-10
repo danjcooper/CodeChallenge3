@@ -1,8 +1,9 @@
 import React from 'react';
+import { Repo } from './components'
 
 function App() {
     return (
-        <h1>Hi react?</h1>
+        <Repo />
     )
 };
 
