@@ -10,7 +10,7 @@ const Profile = ({ userName }) => {
       <h2 className="heading">{userName}'s Repos</h2>
       <section id="repoCollection">
         {names.map((name, i) => (
-          <Repo key={i} repoName={name} />
+          <Repo key={i} repoName={name} repoId="test" />
         ))}
       </section>
     </>
