@@ -1,6 +1,6 @@
 import React from "react";
 import { Repo, Header } from "./components";
-import { Homepage, Profile, RepoDetails } from "./pages";
+import { Homepage, Profile, RepoDetails } from "./Pages";
 import { Switch, Route } from "react-router-dom";
 import "./style.css";
 
