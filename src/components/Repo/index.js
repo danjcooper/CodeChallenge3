@@ -1,23 +1,21 @@
 import React from "react";
+
 import "./style.css";
 
-const Repo = ({ repoName, issues, forks, stars, commits }) => {
+const Repo = (repoName, repoId) => {
+  const handleClick = (e) => {
+    console.log(e.target.closest("section").key);
+    console.log(e);
+    console.log("clicked");
+  };
+
   return (
-    <article className="RepoInfo">
-      <h2>{repoName}</h2>
-      <h3>
-        Stars: <span className="dataPoint">{stars}</span>
-      </h3>
-      <h3>
-        Commits: <span className="dataPoint">{commits}</span>
-      </h3>
-      <h3>
-        Forks: <span className="dataPoint">{forks}</span>
-      </h3>
-      <h3>
-        Issues: <span className="dataPoint">{issues}</span>
-      </h3>
-    </article>
+    <section id={repoId.repoId}>
+      <article className="repo">
+        <h2>{repoName.repoName}</h2>
+      </article>
+      <button onClick={handleClick}>more info</button>
+    </section>
   );
 };
 

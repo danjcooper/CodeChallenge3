@@ -1,0 +1,14 @@
+header {
+  width: 100vw;
+  background: #817fe8;
+
+  padding: 10px;
+
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
