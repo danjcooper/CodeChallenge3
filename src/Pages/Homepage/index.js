@@ -5,6 +5,9 @@ const Homepage = () => {
   const handleClick = (e) => {
     e.preventDefault();
     console.log("Clicked");
+    // TODO add the data to the store.
+
+    window.location.pathname = "/profile";
   };
 
   return (
