@@ -7,12 +7,12 @@ const PUBLIC_DIRECTORY = path.join(ROOT_DIRECTORY, "public"); // the root of the
 
 const config = {
   entry: [path.resolve(__dirname, "../src/index.js")], // the main JavaScript file of the project
-  // in webpack.config.js
   output: {
-    path: path.resolve(ROOT_DIRECTORY, "build"), // here!
-    // ..etc
+    // instructions for compiling the code
+    path: path.resolve(ROOT_DIRECTORY, "build"), // the file where the compiled code should go
+    filename: "bundle.js", // the file name of the compiled code
+    publicPath: "/", // specifies the base path for all the assets within your application.
   },
-
   mode: "development", // tells webpack to use its built-in optimizations according to the mode
   resolve: {
     // instructions on how to resolve modules
