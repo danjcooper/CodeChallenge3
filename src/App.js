@@ -1,6 +1,6 @@
 import React from "react";
 import { Repo, Header } from "./components";
-import { Homepage, Profile } from "./pages";
+import { Homepage, Profile, RepoDetails } from "./pages";
 import { Switch, Route } from "react-router-dom";
 import "./style.css";
 
@@ -23,6 +23,9 @@ function App() {
         </Route>
         <Route exact path="/profile">
           <Profile userName="danjcooper" />
+        </Route>
+        <Route exact path="/repo-details/:repoId">
+          <RepoDetails repoId="1" />
         </Route>
       </Switch>
     </>
