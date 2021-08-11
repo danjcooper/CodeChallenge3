@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Repo, Header } from "./components";
 import { Homepage, Profile } from "./pages";
@@ -28,5 +29,6 @@ function App() {
     </>
   );
 }
+
 
 export default App;
